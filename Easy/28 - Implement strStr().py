@@ -1,7 +1,8 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
-        if needle == '':
+        if needle == "":
             return 0
-
-        digit = haystack.find(needle)
-        return digit
+        if needle in haystack:
+            return haystack.index(needle)
+        else:
+            return -1
