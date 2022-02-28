@@ -17,4 +17,3 @@ class Solution:
 
         # reverse result
         return traversal[::-1]
-       
